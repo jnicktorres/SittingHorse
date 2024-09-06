@@ -1,3 +1,5 @@
 # SittingHorse
 
-Alex Baker :) - Backend
+# Brayden
+
+# Alex Baker :) - Backend

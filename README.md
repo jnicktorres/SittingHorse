@@ -1,6 +1,6 @@
 # SittingHorse
 
-# Brayden
+# Brayden :/ - Full-Stack
 
 # Alex Baker :) - Backend
 

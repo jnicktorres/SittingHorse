@@ -2,6 +2,6 @@
 
 # Brayden
 
-# Alex Baker :) - Backend
+# Alex Baker :] - Backend
 
 # Nick Torres :3 - Frontend

@@ -6,4 +6,4 @@
 
 # Nick Torres :3 - Frontend
 
-# Shane :P - Full-Stack
+# Shane McNabb :P - Full-Stack

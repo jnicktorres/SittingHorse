@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from "axios";
+import DataComponent from './components/DataComponent';
 
 function App() {
   const [count, setCount] = useState(0)
   const [array, setArray] = useState([]);
 
   const fetchAPI = async () => {
-    const response = await axios.get("http://localhost:8080/api");
+    const response = await axios.get("http://localhost:8080/api/data");
     setArray(response.data.fruits);
     console.log(response.data.fruits);
   };
@@ -29,7 +30,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -44,7 +45,8 @@ function App() {
             </div>
           ))
         }
-      </div>
+      </div> */}
+      <DataComponent />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import { useState, useEffect } from "react";
+import "./App.css";
 import axios from "axios";
 
 function App() {
-  const [count, setCount] = useState(0)
   const [array, setArray] = useState([]);
 
   const fetchAPI = async () => {
@@ -18,9 +17,16 @@ function App() {
 
   return (
     <>
-
+      <div>
+        {array.map((fruit, index) => (
+          <div key={index}>
+            <p>{fruit}</p>
+            <br></br>
+          </div>
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

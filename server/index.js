@@ -24,10 +24,6 @@ app.get("/ability-scores", (req, res) => {
     res.json({"abilityScores": [12, 11, 14, 9, 14, 16]});
 });
 
-app.get("/ability-scores", (req, res) => {
-    res.json({"abilityScores": [12, 11, 14, 9, 14, 16]});
-});
-
 app.listen(8080, () => {
     console.log("Server started on port 8080");
 });

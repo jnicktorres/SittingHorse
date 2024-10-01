@@ -26,7 +26,7 @@ app.get("/api/data", (req, res) => {
 });
 
 app.get("/ability-scores", (req, res) => {
-    res.json({"abilityScores": [12, 10, 14, 8, 14, 16]});
+    res.json({"abilityScores": [12, 11, 14, 9, 14, 16]});
 });
 
 app.listen(8080, () => {

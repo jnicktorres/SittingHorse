@@ -1,0 +1,16 @@
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Grid,
+    Heading,
+    Text,
+    Box,
+  } from "@chakra-ui/react";
+
+.Card{
+    width: "120px";
+    height: "75px";
+    align: "center";
+}

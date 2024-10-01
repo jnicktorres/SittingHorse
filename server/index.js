@@ -25,6 +25,10 @@ app.get("/api/data", (req, res) => {
 >>>>>>> Stashed changes
 });
 
+app.get("/ability-scores", (req, res) => {
+    res.json({"abilityScores": [12, 10, 14, 8, 14, 16]});
+});
+
 app.listen(8080, () => {
     console.log("Server started on port 8080");
 });

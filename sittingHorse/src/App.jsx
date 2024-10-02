@@ -6,6 +6,7 @@ import axios from "axios";
 import DataComponent from './components/DataComponent';
 
 function App() {
+  const spellName = 'fireball';
   const [count, setCount] = useState(0)
   const [array, setArray] = useState([]);
 
@@ -46,7 +47,7 @@ function App() {
           ))
         }
       </div> */}
-      <DataComponent />
+      <DataComponent spellName={spellName}/>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

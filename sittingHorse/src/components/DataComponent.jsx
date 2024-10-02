@@ -23,8 +23,11 @@ class DataComponent extends React.Component {
     }
   
     componentDidMount() {
+
+      const { spellName } = this.props;
+
       axios.post('http://localhost:8080/api/data', {
-        spellName: 'acid-arrow'
+        spellName: spellName
       })
         .then(response => {
             console.log('Data received from backend:', response.data);
@@ -35,7 +38,7 @@ class DataComponent extends React.Component {
         });
     }
   
-    render() {
+    render(props) {
       const { data } = this.state;
       console.log('Current state data:', data);
     
@@ -57,7 +60,7 @@ class DataComponent extends React.Component {
               {/* Add more properties as needed */}
               <Popover>
                 <PopoverTrigger>
-                  <Button>{data.name}</Button>
+                  <Button>{data.name} {props}</Button>
                 </PopoverTrigger>
                 <PopoverContent>
                   <PopoverArrow />

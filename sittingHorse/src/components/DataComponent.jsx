@@ -23,7 +23,9 @@ class DataComponent extends React.Component {
     }
   
     componentDidMount() {
-      axios.get('http://localhost:8080/api/data')
+      axios.post('http://localhost:8080/api/data', {
+        spellName: 'acid-arrow'
+      })
         .then(response => {
             console.log('Data received from backend:', response.data);
           this.setState({ data: response.data });
@@ -61,12 +63,14 @@ class DataComponent extends React.Component {
                   <PopoverArrow />
                   <PopoverCloseButton />
                   <PopoverHeader><li><strong>Name:</strong> {data.name}</li></PopoverHeader>
-                  <PopoverBody><li><strong>Index:</strong> {data.index}</li>
-              <li><strong>Range:</strong> {data.range}</li>
-              <li><strong>Level:</strong> {data.level}</li>
-              <li><strong>Duration:</strong> {data.duration}</li>
-              <li><strong>Components:</strong> {data.components.join(', ')}</li>
-              <li><strong>Description:</strong> {data.desc.join(' ')}</li></PopoverBody>
+                  <PopoverBody>
+                    <li><strong>Index:</strong> {data.index}</li>
+                    <li><strong>Range:</strong> {data.range}</li>
+                    <li><strong>Level:</strong> {data.level}</li>
+                    <li><strong>Duration:</strong> {data.duration}</li>
+                    <li><strong>Components:</strong> {data.components.join(', ')}</li>
+                    <li><strong>Description:</strong> {data.desc.join(' ')}</li>
+                  </PopoverBody>
                 </PopoverContent>
               </Popover>
         </div>

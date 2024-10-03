@@ -4,9 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import axios from "axios";
 import DataComponent from './components/DataComponent';
+import SpellList from './components/SpellList';
 
 function App() {
   const spellName = 'fireball';
+  const test = ["fireball", "acid-arrow"];
   const [count, setCount] = useState(0)
   const [array, setArray] = useState([]);
 
@@ -47,7 +49,9 @@ function App() {
           ))
         }
       </div> */}
-      <DataComponent spellName={spellName}/>
+      {/* <DataComponent spellName={spellName}/> */}
+      
+      <SpellList props={test}/>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

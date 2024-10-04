@@ -8,7 +8,7 @@ import SpellList from './components/SpellList';
 
 function App() {
   const spellName = 'fireball';
-  const test = ["fireball", "acid-arrow"];
+  const test = ["fireball", "acid-arrow", "spirit-guardians", "eldritch-blast", "magic-missile", "fire-bolt", "misty-step"];
   const [count, setCount] = useState(0)
   const [array, setArray] = useState([]);
 

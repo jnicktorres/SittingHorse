@@ -1,0 +1,6 @@
+.test-element {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
